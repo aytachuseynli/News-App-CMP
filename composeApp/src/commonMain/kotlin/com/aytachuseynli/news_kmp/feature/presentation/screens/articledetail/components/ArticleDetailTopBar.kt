@@ -2,7 +2,7 @@ package com.aytachuseynli.news_kmp.feature.presentation.screens.articledetail.co
 
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.BookmarkBorder
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -27,7 +27,7 @@ fun ArticleDetailTopBar(
         title = { },
         navigationIcon = {
             IconButton(onClick = onNavigateBack) {
-                Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                Icon(Icons.AutoMirrored.Default.ArrowBack, contentDescription = "Back")
             }
         },
         actions = {
