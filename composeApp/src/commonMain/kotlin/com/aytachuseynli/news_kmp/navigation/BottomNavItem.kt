@@ -12,9 +12,5 @@ enum class BottomNavItem(
 ) {
     Home("Home", Icons.Default.Home),
     Favorites("Favorites", Icons.Default.Favorite),
-    Trends("Trends", Icons.Default.Insights);
-
-    companion object {
-        fun values(): Array<BottomNavItem> = arrayOf(Home, Favorites, Trends)
-    }
+    Trends("Trends", Icons.Default.Insights)
 }
