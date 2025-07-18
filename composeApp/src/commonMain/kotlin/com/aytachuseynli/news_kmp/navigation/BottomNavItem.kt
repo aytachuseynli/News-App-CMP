@@ -3,7 +3,7 @@ package com.aytachuseynli.news_kmp.navigation
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.TrendingUp
+import androidx.compose.material.icons.filled.Insights
 import androidx.compose.ui.graphics.vector.ImageVector
 
 enum class BottomNavItem(
@@ -12,7 +12,7 @@ enum class BottomNavItem(
 ) {
     Home("Home", Icons.Default.Home),
     Favorites("Favorites", Icons.Default.Favorite),
-    Trends("Trends", Icons.Default.TrendingUp);
+    Trends("Trends", Icons.Default.Insights);
 
     companion object {
         fun values(): Array<BottomNavItem> = arrayOf(Home, Favorites, Trends)

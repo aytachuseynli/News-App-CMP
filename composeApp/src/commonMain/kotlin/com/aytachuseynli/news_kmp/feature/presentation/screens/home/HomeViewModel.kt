@@ -9,7 +9,6 @@ class HomeViewModel(
     private val topHeadlines: GetTopHeadlinesUseCase,
     private val searchNews: SearchNewsUseCase
 ) : BaseViewModel<HomeUiState>() {
-
     private var cachedHeadlines: List<Article> = emptyList()
 
     init { loadHeadlines(state.value.country) }
