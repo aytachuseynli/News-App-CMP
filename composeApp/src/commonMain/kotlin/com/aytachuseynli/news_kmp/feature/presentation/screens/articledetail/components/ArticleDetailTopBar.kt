@@ -1,5 +1,6 @@
 package com.aytachuseynli.news_kmp.feature.presentation.screens.articledetail.components
 
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Bookmark
@@ -48,6 +49,7 @@ fun ArticleDetailTopBar(
                     }
                 )
             }
-        }
+        },
+        windowInsets = WindowInsets(0)
     )
 }

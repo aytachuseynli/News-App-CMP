@@ -1,6 +1,7 @@
 package com.aytachuseynli.news_kmp.feature.presentation.screens.articledetail
 
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -21,8 +22,8 @@ import com.aytachuseynli.news_kmp.feature.presentation.screens.articledetail.com
 fun ArticleDetailRoute(
     article: Article,
     modifier: Modifier = Modifier,
-    onNavigateBack: () -> Unit
-) =
+    onNavigateBack: () -> Unit,
+) {
     BaseScreen<ArticleDetailUiState, ArticleDetailViewModel>(modifier = modifier) { uiState, viewModel ->
 
         LaunchedEffect(article) { viewModel.setArticle(article) }
@@ -35,6 +36,7 @@ fun ArticleDetailRoute(
             onClearError = viewModel::clearError
         )
     }
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -43,7 +45,7 @@ private fun ArticleDetailScreen(
     onNavigateBack: () -> Unit,
     onSave: () -> Unit,
     onClearError: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
 ) {
     val snackbarHostState = remember { SnackbarHostState() }
 
@@ -65,7 +67,7 @@ private fun ArticleDetailScreen(
         snackbarHost = {
             SnackbarHost(hostState = snackbarHostState)
         },
-        modifier = modifier.fillMaxSize()
+        modifier = modifier.fillMaxWidth()
     ) { innerPadding ->
 
         ArticleDetailContent(
