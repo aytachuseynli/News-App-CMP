@@ -13,7 +13,7 @@ fun BottomNavigationBar(
     modifier: androidx.compose.ui.Modifier = androidx.compose.ui.Modifier
 ) {
     NavigationBar(modifier = modifier) {
-        BottomNavItem.values().forEach { item ->
+        BottomNavItem.entries.forEach { item ->
             NavigationBarItem(
                 selected = current == item,
                 onClick = { onTabSelected(item) },
