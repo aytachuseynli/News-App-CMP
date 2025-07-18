@@ -31,8 +31,8 @@ fun NewsSlideItem(
 ) {
     Box(
         modifier = modifier
-            .fillMaxSize()
             .clickable { onClick() }
+            .fillMaxSize()
     ) {
         AsyncImage(
             model = article.imageUrl,
@@ -43,7 +43,6 @@ fun NewsSlideItem(
 
         Box(
             modifier = Modifier
-                .fillMaxSize()
                 .background(
                     Brush.verticalGradient(
                         colors = listOf(
@@ -53,6 +52,7 @@ fun NewsSlideItem(
                         )
                     )
                 )
+                .fillMaxSize()
         )
 
         Column(
