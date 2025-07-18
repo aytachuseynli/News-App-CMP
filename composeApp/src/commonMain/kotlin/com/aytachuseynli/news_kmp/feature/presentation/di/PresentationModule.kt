@@ -5,12 +5,12 @@ import com.aytachuseynli.news_kmp.feature.presentation.screens.favorites.Favorit
 import com.aytachuseynli.news_kmp.feature.presentation.screens.home.HomeViewModel
 import com.aytachuseynli.news_kmp.feature.presentation.screens.trends.TrendsViewModel
 import org.koin.core.module.dsl.singleOf
-import org.koin.core.module.dsl.viewModel
+import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 val presentationModule = module {
     singleOf(::HomeViewModel)
-    viewModel { ArticleDetailViewModel(get(), get(), get()) }
+    viewModelOf(::ArticleDetailViewModel)
 
     singleOf(::TrendsViewModel)
     singleOf(::FavoritesViewModel)

@@ -17,7 +17,6 @@ class NewsRepositoryImpl(
     private val api: NewsApiClient,
     private val databaseHelper: DatabaseHelper
 ) : NewsRepository {
-
     // API methods
     override suspend fun headlines(country: String): NewsResult<List<Article>> =
         api.getTopHeadlines(country)
