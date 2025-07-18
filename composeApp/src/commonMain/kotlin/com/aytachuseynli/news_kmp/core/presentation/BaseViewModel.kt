@@ -14,6 +14,9 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+/**
+ * Base ViewModel providing common functionality for all ViewModels.
+ */
 abstract class BaseViewModel<S>(
     private val dispatcher: CoroutineDispatcher = Dispatchers.IO
 ) : ViewModel() {
