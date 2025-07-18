@@ -38,5 +38,4 @@ class FavoritesViewModel(
     }
 
     override fun getInitialUiState() = FavoritesUiState(isLoading = true)
-
 }

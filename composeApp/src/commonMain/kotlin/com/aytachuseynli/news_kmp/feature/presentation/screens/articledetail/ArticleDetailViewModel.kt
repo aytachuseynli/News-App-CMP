@@ -12,9 +12,6 @@ class ArticleDetailViewModel(
     private val deleteArticle: DeleteArticleUseCase,
     private val saveArticle: SaveArticleUseCase
 ) : BaseViewModel<ArticleDetailUiState>() {
-
-    override fun getInitialUiState(): ArticleDetailUiState = ArticleDetailUiState()
-
     fun setArticle(article: Article) {
         setState { copy(article = article) }
         checkIfSaved(article.url ?: "")
@@ -109,4 +106,6 @@ class ArticleDetailViewModel(
     fun clearError() {
         setState { copy(errorMessage = null) }
     }
+
+    override fun getInitialUiState(): ArticleDetailUiState = ArticleDetailUiState()
 }

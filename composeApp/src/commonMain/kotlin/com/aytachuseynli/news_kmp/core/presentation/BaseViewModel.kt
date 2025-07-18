@@ -28,9 +28,7 @@ abstract class BaseViewModel<S>(
     abstract fun getInitialUiState(): S
 
     /** Atomically update state using a reducer. */
-    protected fun setState(reducer: S.() -> S) {
-        _state.update(reducer)
-    }
+    protected fun setState(reducer: S.() -> S) = _state.update(reducer)
 
     /**
      * Launch suspending [block] in [viewModelScope] and handle [NewsResult]
