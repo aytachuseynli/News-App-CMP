@@ -48,10 +48,4 @@ class DatabaseHelper(private val database: NewsDatabase) {
             queries.deleteArticleByUrl(url)
         }
     }
-
-    suspend fun deleteArticlesBySourceId(sourceId: String) {
-        withContext(Dispatchers.IO) {
-            queries.deleteArticlesBySourceId(sourceId)
-        }
-    }
 }
