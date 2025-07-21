@@ -1,3 +1,5 @@
+@file:Suppress("SwallowedException", "TooGenericExceptionCaught", "MagicNumber")
+
 package com.aytachuseynli.news_kmp.core.util
 
 
@@ -8,7 +10,6 @@ import io.ktor.client.call.body
 import io.ktor.client.network.sockets.SocketTimeoutException
 import io.ktor.client.statement.HttpResponse
 import io.ktor.util.network.UnresolvedAddressException
-
 suspend inline fun <reified T> safeCall(
     execute: () -> HttpResponse
 ): NewsResult<T> {
