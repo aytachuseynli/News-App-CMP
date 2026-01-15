@@ -27,13 +27,13 @@ This project demonstrates how to build a scalable, maintainable, and production-
 ---
 ## 🖼 Screenshots
 
-Screenshots will be added here.
-
-<img width="1080" height="2400" alt="Screenshot_20260115_141955" src="https://github.com/user-attachments/assets/a97646f0-84b5-46f4-9537-d00134bdcf9a" />
-<img width="1080" height="2400" alt="Screenshot_20260115_142056" src="https://github.com/user-attachments/assets/8ebb95c5-88c3-4f18-9562-dd55d68f602b" />
-<img width="1080" height="2400" alt="Screenshot_20260115_142116" src="https://github.com/user-attachments/assets/164c597b-5643-4180-afda-c396796e3001" />
-<img width="1080" height="2400" alt="Screenshot_20260115_142126" src="https://github.com/user-attachments/assets/ef835f79-afb0-4ddc-b7cb-5c572b5f74d5" />
-<img width="1080" height="2400" alt="Screenshot_20260115_142139" src="https://github.com/user-attachments/assets/868a4632-a8ef-45d2-8cef-58f0c8098091" />
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+  <img width="180" alt="Home" src="https://github.com/user-attachments/assets/a97646f0-84b5-46f4-9537-d00134bdcf9a" />
+  <img width="180" alt="Detail" src="https://github.com/user-attachments/assets/8ebb95c5-88c3-4f18-9562-dd55d68f602b" />
+  <img width="180" alt="Favorites" src="https://github.com/user-attachments/assets/164c597b-5643-4180-afda-c396796e3001" />
+  <img width="180" alt="Categories" src="https://github.com/user-attachments/assets/ef835f79-afb0-4ddc-b7cb-5c572b5f74d5" />
+  <img width="180" alt="Filtered Categorie" src="https://github.com/user-attachments/assets/868a4632-a8ef-45d2-8cef-58f0c8098091" />
+</div>
 
 
 ---
