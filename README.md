@@ -25,7 +25,18 @@ This project demonstrates how to build a scalable, maintainable, and production-
 - **Article Details** – Read full article content with save/unsave functionality
 
 ---
+## 🖼 Screenshots
 
+Screenshots will be added here.
+
+<img width="1080" height="2400" alt="Screenshot_20260115_141955" src="https://github.com/user-attachments/assets/a97646f0-84b5-46f4-9537-d00134bdcf9a" />
+<img width="1080" height="2400" alt="Screenshot_20260115_142056" src="https://github.com/user-attachments/assets/8ebb95c5-88c3-4f18-9562-dd55d68f602b" />
+<img width="1080" height="2400" alt="Screenshot_20260115_142116" src="https://github.com/user-attachments/assets/164c597b-5643-4180-afda-c396796e3001" />
+<img width="1080" height="2400" alt="Screenshot_20260115_142126" src="https://github.com/user-attachments/assets/ef835f79-afb0-4ddc-b7cb-5c572b5f74d5" />
+<img width="1080" height="2400" alt="Screenshot_20260115_142139" src="https://github.com/user-attachments/assets/868a4632-a8ef-45d2-8cef-58f0c8098091" />
+
+
+---
 ## 🧱 Architecture
 
 The project follows **Clean Architecture**, ensuring a clear separation of concerns:
